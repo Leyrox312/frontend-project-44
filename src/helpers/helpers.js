@@ -52,11 +52,11 @@ export const generationNumber = () => {
 }
 
 export const generationArithmeticProgression = () => {
-  const lengthProgression = Math.floor(Math.random() * (20 - 5 + 1)) + 5 
+  const lengthProgression = Math.floor(Math.random() * (20 - 5 + 1)) + 5
 
-  const stepProgression = Math.floor(Math.random() * (10 - 1 + 1)) + 1 
+  const stepProgression = Math.floor(Math.random() * (10 - 1 + 1)) + 1
 
-  const start = Math.floor(Math.random() * 100) 
+  const start = Math.floor(Math.random() * 100)
 
   let current = start
 
@@ -71,15 +71,15 @@ export const generationArithmeticProgression = () => {
 }
 
 export const replaceRandomWithDots = (arr) => {
-  const positionPoints = Math.floor(Math.random() * arr.length) 
+  const positionPoints = Math.floor(Math.random() * arr.length)
   const newArr = arr.map((item, index) => (index !== positionPoints ? item : '..'))
 
   return [newArr, arr[positionPoints]]
 }
 
 export const isPrime = (num) => {
-  if (num <= 1) return false 
-  if (num === 2) return true 
+  if (num <= 1) return false
+  if (num === 2) return true
 
   for (let i = 2; i <= Math.sqrt(num); i++) {
     if (num % i === 0) return false
